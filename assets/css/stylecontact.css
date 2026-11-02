@@ -1,0 +1,97 @@
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+
+main > div:first-child {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+main > div:first-child h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+}
+
+
+main > div:first-child a {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background-color: #f8b4c8;
+  color: #3a0a1f;
+}
+
+main > div:first-child a:hover {
+  text-decoration: underline;
+}
+
+
+.contact-section {
+  background-color: #f8f6fb;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #a56cc1;
+}
+
+button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #a56cc1;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f55aa;
+}

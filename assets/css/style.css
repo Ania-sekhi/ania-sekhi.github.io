@@ -1,0 +1,29 @@
+main{
+  padding-bottom: 100px; 
+}
+
+h1, h2, P {
+    margin-left: 1cm;
+    
+}
+
+.paragraphe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px; 
+}
+.paratexte{
+  flex: 1;
+}
+
+
+
+.photo img {
+  width: 320px;
+  height: 6cm;
+  border-radius: 24px; 
+  margin-right: 2cm;
+  margin-top: 1cm;
+}
+

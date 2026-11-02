@@ -1,0 +1,105 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px 70px;
+}
+
+
+main > div:first-child {
+  position: relative;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+main > div:first-child h1 {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+  color: #3a0a1f;
+}
+
+main > div:first-child a {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background-color: #f8b4c8;
+  color: #3a0a1f;
+}
+
+main > div:first-child a:hover {
+  text-decoration: underline;
+}
+
+
+main > div:not(:first-child) {
+  position: relative;
+  text-align: left;
+
+  /* fond clair mais stylé */
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(58, 10, 31, 0.14);
+  border-radius: 22px;
+
+  padding: 22px 22px 22px 52px;
+  margin: 0 0 20px;
+
+  box-shadow: 0 14px 30px rgba(58, 10, 31, 0.10);
+}
+
+
+main > div:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  bottom: 18px;
+  width: 10px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff9fc7, #ffd1b8);
+}
+
+main > div:not(:first-child) h2 {
+  margin: 0 0 10px;
+  font-size: 21px;
+  font-weight: 900;
+  color: #3a0a1f;
+  line-height: 1.2;
+}
+
+
+main > div:not(:first-child) p {
+  margin: 0;
+  line-height: 1.75;
+  color: #241017;
+}
+
+
+main > div:not(:first-child) strong {
+  color: #7a1f3e;
+  font-weight: 900;
+}
+
+
+main > div:not(:first-child) br {
+  line-height: 2.1;
+}
+
+
+
+
+
+
+
+
+
+

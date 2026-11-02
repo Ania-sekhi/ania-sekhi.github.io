@@ -1,0 +1,93 @@
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 40px; 
+  text-align: center;
+}
+
+main > div:first-child {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+main > div:first-child h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+}
+
+
+main > div:first-child a {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background-color: #f8b4c8; /* rose clair */
+  color: #3a0a1f;
+}
+
+
+main > div:first-child a:hover {
+  text-decoration: underline;
+}
+
+
+main > div:not(:first-child) {
+  background-color: #f8b4c8; /* couleur du bloc */
+  color: #3a0a1f;
+
+  border-radius: 26px;
+  padding: 28px 26px;
+  margin: 0 auto 22px;
+
+  border: 2px solid rgba(58, 10, 31, 0.12);
+}
+
+
+main > div:not(:first-child) h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+
+main > div:not(:first-child) > div {
+  display: inline-block;
+  margin: 6px 0 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  background-color: #3a0a1f;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+main > div:not(:first-child) p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+main > div:not(:first-child) ul {
+  list-style-position: inside; 
+  padding: 0;
+  margin: 14px auto 0;
+  max-width: 640px;
+  text-align: center;
+}
+
+
+main > div:not(:first-child) ul li {
+  margin: 8px 0;
+  font-size: 15px;
+}
