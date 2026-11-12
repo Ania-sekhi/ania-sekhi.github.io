@@ -1,0 +1,130 @@
+/* ===== Compétences : sections en grille de 2 colonnes ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* Titre et bouton retour sur toute la largeur */
+main > div:first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main > div:first-child h1 {
+  order: 2;
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Les deux premières sections (compétences, outils) prennent toute la largeur */
+main section:nth-of-type(1),
+main section:nth-of-type(2) { grid-column: 1 / -1; }
+
+/* « Ma façon de travailler » sur toute la largeur, ses 3 cartes côte à côte */
+main section:nth-of-type(3) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+main section:nth-of-type(3) h2 { grid-column: 1 / -1; margin-bottom: 0; }
+main section:nth-of-type(3) > div { margin-top: 0; }
+
+/* Langues et centres d'intérêt : deux cartes de même hauteur */
+main section:nth-of-type(4),
+main section:nth-of-type(5) {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+main section:nth-of-type(4) > div,
+main section:nth-of-type(5) > div { flex: 1; }
+
+main section {
+  background-color: var(--blanc);
+  border-top: 4px solid var(--bleu);
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 8px 22px rgba(17, 17, 17, 0.06);
+}
+
+main section h2 {
+  margin: 0 0 14px;
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--bleu);
+}
+
+main section > div {
+  background-color: var(--bleu-clair);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+
+main section h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--noir);
+}
+
+main section p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+  color: var(--gris);
+}
+
+main section ul { margin: 0; padding-left: 20px; }
+
+main section ul li { margin: 8px 0; line-height: 1.5; }
+
+main section ul li::marker { color: var(--bleu); }
+
+@media (max-width: 760px) {
+  main { grid-template-columns: 1fr; }
+  main section:nth-of-type(3) { grid-template-columns: 1fr; }
+}
+
+/* Langues : une ligne par langue (langue à gauche, niveau à droite) */
+main section:nth-of-type(4) > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 18px;
+  row-gap: 10px;
+  align-content: start;
+}
+
+main section:nth-of-type(4) h3,
+main section:nth-of-type(4) p { margin: 0; }
+
+/* Centres d'intérêt : un élément par ligne, même espacement que les langues */
+main section:nth-of-type(5) h3 { margin: 0 0 10px; }
+
+/* Langues et centres d'intérêt : même police et même taille que les listes du haut */
+main section:nth-of-type(4) h3,
+main section:nth-of-type(5) h3 {
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main section:nth-of-type(4) h3 { font-weight: 700; }
+
+main section:nth-of-type(4) p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--noir);
+}
+
+main section:nth-of-type(5) h3 { font-weight: 400; color: var(--noir); }

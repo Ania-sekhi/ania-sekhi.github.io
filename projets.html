@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets — Ania SEKHI</title>
+  <link rel="stylesheet" href="assets/css/styleprojet.css" />
+  <link rel="stylesheet" href="assets/css/commun.css" />
+</head>
+<body>
+  <header class="nav">
+    <div>
+      <a href="index.html">Tester. Comprendre. Améliorer. </a>
+      </div>
+      <nav>
+        <a href="formations.html">Mes Formations</a>
+        <a href="experience.html">Mes Expériences</a>
+        <a href="projets.html">Mes Projets</a>
+        <a href="competences.html">Mes Compétences</a>
+        <a href="contact.html">Me Contacter</a>
+      </nav>
+    
+  </header>
+  <main>
+    <div>
+      <h1>Projets & réalisations</h1>
+      <a href="index.html">← Retour</a>
+    </div>
+
+    <div>
+      <h2>VéloCité — Campagne de test complète</h2>
+      <p>
+        <strong>Contexte :</strong> une borne de location de vélos livrée en 5 versions pendant ma formation, avec une spécification à analyser.<br>
+        <strong>Ce que j'ai fait :</strong> j'ai relu la spécification, écrit le plan de test, conçu 28 cas de test avec les techniques ISTQB (valeurs limites, tables de décision, transitions d'état), exécuté 5 campagnes et rédigé les fiches d'anomalie et le rapport de fin de tests.<br>
+        <strong>Résultat :</strong> 14 anomalies trouvées et suivies jusqu'à leur correction, cahier de tests prêt à importer dans Jira / Xray.<br>
+        <strong>Outils :</strong> Jira, Xray, Confluence, Excel
+      </p>
+      <a class="lien-github" href="https://github.com/Ania-sekhi/velocite-campagne-de-test" target="_blank" rel="noopener">Voir le projet sur GitHub →</a>
+    </div>
+
+    <div>
+      <h2>Médiathèque — Tests d'API</h2>
+      <p>
+        <strong>Contexte :</strong> une application de prêt de livres avec une API REST et une base de données.<br>
+        <strong>Ce que j'ai fait :</strong> j'ai testé l'API à la main avec Postman, automatisé les mêmes vérifications avec Robot Framework, et contrôlé directement en base, avec des requêtes SQL, que chaque emprunt et chaque retour étaient bien enregistrés.<br>
+        <strong>Résultat :</strong> 31 tests automatisés, lancés sur GitHub à chaque mise à jour.<br>
+        <strong>Outils :</strong> Postman, Robot Framework, SQL, GitHub
+      </p>
+      <a class="lien-github" href="https://github.com/Ania-sekhi/Mediatheque-tests-api" target="_blank" rel="noopener">Voir le projet sur GitHub →</a>
+    </div>
+
+    <div>
+      <h2>Automatisation des tests d'interface web</h2>
+      <p>
+        <strong>Contexte :</strong> trois applications web : un générateur de mot de passe, la Médiathèque et la borne VéloCité.<br>
+        <strong>Ce que j'ai fait :</strong> j'ai commencé avec Selenium IDE, relu et corrigé les scripts proposés, puis réécrit les tests dans Robot Framework avec Selenium et Playwright, en séparant les écrans (Page Object) des scénarios.<br>
+        <strong>Résultat :</strong> 50 tests automatisés, dont la régression de VéloCité, lancés sur GitHub à chaque mise à jour ; 5 anomalies documentées sur le générateur.<br>
+        <strong>Outils :</strong> Selenium IDE, Selenium, Playwright, Robot Framework, GitHub
+      </p>
+      <a class="lien-github" href="https://github.com/Ania-sekhi/automatisation-interface-web" target="_blank" rel="noopener">Voir le projet sur GitHub →</a>
+    </div>
+
+    <div>
+      <h2>Accessibilité et compatibilité</h2>
+      <p>
+        <strong>Contexte :</strong> un audit de la Médiathèque et du générateur de mot de passe selon le RGAA, et des essais sur différentes tailles d'écran.<br>
+        <strong>Ce que j'ai fait :</strong> j'ai lancé une analyse automatique (axe), vérifié 15 critères RGAA à la main, testé chaque parcours au clavier seul, puis sur mobile, tablette, grand écran et au zoom 200 %.<br>
+        <strong>Résultat :</strong> 12 anomalies, dont un indicateur de sécurité invisible pour les lecteurs d'écran, que l'outil automatique n'avait pas vu.<br>
+        <strong>Outils :</strong> axe DevTools, RGAA 4.1, WCAG 2.1, Jira
+      </p>
+      <a class="lien-github" href="https://github.com/Ania-sekhi/accessibilite-compatibilite" target="_blank" rel="noopener">Voir le projet sur GitHub →</a>
+    </div>
+
+  </main>
+<footer class="footer">
+  <div class="footer-content">
+    <strong>Ania SEKHI</strong>
+    <div class="footer-contact">
+      Tél. : (+33) 06 51 67 89 29<br>
+      Email : sekhiania33@gmail.com <br>
+      Bois-Colombes • Île-de-France
+    </div>
+
+  </div>
+</footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

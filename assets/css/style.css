@@ -1,0 +1,55 @@
+/* ===== Accueil : texte à gauche, photo à droite, dans une carte centrée ===== */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.paragraphe {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: var(--blanc);
+  border-left: 6px solid var(--bleu);
+  border-radius: 16px;
+  padding: 44px 48px;
+  box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+}
+
+.paratexte { flex: 1; }
+
+.paratexte h1 {
+  margin: 0 0 8px;
+  font-size: 44px;
+  color: var(--noir);
+}
+
+.paratexte h2 {
+  margin: 0 0 22px;
+  font-size: 20px;
+  color: var(--bleu);
+}
+
+.paratexte p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--noir);
+}
+
+.photo img {
+  width: 190px;
+  height: auto;
+  border-radius: 16px;
+  border: 4px solid var(--bleu-clair);
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .paragraphe { flex-direction: column-reverse; text-align: center; padding: 30px 22px; }
+  .paratexte h1 { font-size: 34px; }
+}
